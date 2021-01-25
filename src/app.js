@@ -17,7 +17,7 @@ app.use(morgan((NODE_ENV === 'production')
   { skip: () => NODE_ENV === 'test' }
   ))
 
-app.use(morgan(morganOption))
+app.use(morgan(morgan))
 app.use(helmet())
 app.use(cors())
 app.use(validateBearerToken)
